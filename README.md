@@ -1,0 +1,2 @@
+# bdg
+Blueprint Diff Guard
