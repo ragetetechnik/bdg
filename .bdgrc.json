@@ -1,0 +1,10 @@
+{
+  "ignorePaths": [
+    ".idea",
+    "dist",
+    "node_modules",
+    "coverage",
+    "reports",
+    "build"
+  ]
+}

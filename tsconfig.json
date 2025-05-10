@@ -1,11 +1,24 @@
 {
+  "extends": "@tsconfig/node-lts/tsconfig.json",
   "compilerOptions": {
-    "module": "nodenext",
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": true,
-    "skipLibCheck": true,
-    "verbatimModuleSyntax": true
+    /* Base Options: */
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    /* Strictness */
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    /* Modules */
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "erasableSyntaxOnly": true
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["dist", "node_modules"]
 }
